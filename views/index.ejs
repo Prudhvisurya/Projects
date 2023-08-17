@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the DevOps Tools Webpage</h1>
+    <p>This project demonstrates a simple interaction between a client-side webpage and a server-side Node.js application. Users enter their name in the webpage, and upon clicking the button, the server responds with a list of DevOps tools. The server uses Express and EJS to achieve this interaction.</p>
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput">
+
+    <p id="devOpsToolsText"></p>
+    <ul id="DevOpsToolsList" style="display: none;"></ul>
+
+    <button id="submitButton">Click Here</button>
+    
+    <!-- New section -->
+    <div id="responseSection" style="display: none;">
+      <p id="responseMessage"></p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
