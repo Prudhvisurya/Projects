@@ -1,0 +1,88 @@
+**Project Overview:**
+
+The project demonstrates a simple interaction between a client-side webpage and a server-side Node.js application. Users enter their name in a webpage, and upon clicking the button, the server responds with a list of DevOps tools. The server uses Express and EJS to achieve this interaction.
+
+Directoy Structure
+
+Projects/
+project-root/
+├── node_modules/
+├── public/
+│   ├── index.html
+│   ├── index.js
+│   ├── styles.css
+├── views/
+│   ├── index.ejs
+├── app.js
+└── package.json
+
+
+
+The project involves creating a simple webpage that interacts with a Node.js server to display a list of DevOps tools.
+
+**Installation Steps:**
+
+1. **Node.js Installation:**
+   - Install Node.js on your system. You can download it from the official Node.js website: https://nodejs.org/
+   npm command will work only if you install nodejs in your local setup
+
+2. **Project Setup:**
+   - Create a new directory for your project. Open a terminal and navigate to the project directory.
+
+3. **Initializing Project:**
+   - Run the following command to initialize a package.json file:
+     ```
+     npm init -y
+     ```
+
+4. **Installing Dependencies:**
+   - Install the required packages using the following commands:
+     ```
+     npm install express ejs
+     ```
+
+**Running the Project:**
+
+1. **Server Configuration:**
+   - Create a file named `app.js` in your project directory. This file will contain the Express.js server configuration.
+   - Set up the Express server to use EJS as the view engine and to serve static files from the `public` directory.
+
+2. **View Templates:**
+   - Create a directory named `views` in your project directory. Inside the `views` directory, create a file named `index.ejs`. This file will be used to render the dynamic content.
+
+3. **Static Files:**
+   - Create a directory named `public` in your project directory. Inside the `public` directory, create an `index.html` file. This file will be served as a static asset.
+
+4. **JavaScript Logic:**
+   - Create a file named `index.js` in the root directory. This file will contain the JavaScript logic to interact with the webpage and server.
+
+5. **Running the Server:**
+   - In the terminal, run the following command to start the server:
+     ```
+     node app.js
+     ```
+
+**Accessing the Webpage:**
+
+1. **Web Browser:**
+   - Open a web browser and navigate to `http://localhost:3000`.
+
+2. **Name Input:**
+   - Enter your name in the provided input field and click the "Click Here" button.
+
+3. **Result:**
+   - You will see a message displaying your name and a list of DevOps tools.
+
+**Port Number:**
+   - The server is configured to run on port 3000 (`http://localhost:3000`) by default. You can change the port number in the `app.js` file if needed.
+
+**Purpose of Installing Dependencies:**
+
+1. **Express:**
+   - Express is used to create a web server, handle routes, and manage HTTP requests and responses.
+
+2. **EJS (Embedded JavaScript):**
+   - EJS is a template engine that allows you to dynamically generate HTML content based on data from the server.
+
+
+
