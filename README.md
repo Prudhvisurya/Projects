@@ -11,8 +11,10 @@ between a client-side webpage and a server-side Node.js application. Users can e
 
 ## Usage
 
-1. Run the application: `npm start`
-2. Open a web browser and navigate to `http://localhost:3000`
+1. Run the application: cd path/to/your/project
+2. Run this command:node app.js
+
+3. Open a web browser and navigate to `http://localhost:3000`
 
 Enter your name, click the button, and follow the prompts to see the list of DevOps tools.
 
